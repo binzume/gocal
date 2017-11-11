@@ -1,6 +1,6 @@
-# Calender for Golang
+# Calendar for Golang
 
-Output HTML and Markdown calender.
+Output HTML and Markdown calendar.
 
 ## Usage
 
@@ -9,11 +9,11 @@ package main
 
 import (
 	"fmt"
-	"github.com/binzume/go-calender"
+	"github.com/binzume/go-calendar"
 )
 
 func main() {
-	fmt.Println(calender.NewCalender().Markdown())
+	fmt.Println(calendar.NewCalendar().Markdown())
 }
 ```
 
