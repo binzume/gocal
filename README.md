@@ -1,5 +1,8 @@
 # Calendar for Golang
 
+[![Build Status](https://travis-ci.org/binzume/go-calendar.svg)](https://travis-ci.org/binzume/go-calendar)
+[![codecov](https://codecov.io/gh/binzume/go-calendar/branch/master/graph/badge.svg)](https://codecov.io/gh/binzume/go-calendar)
+
 Output HTML and Markdown calendar.
 
 ## Usage
