@@ -29,8 +29,9 @@ func (c *Calendar) Html() string {
 	wc := len(c.WeekLabels)
 	wd := (int(c.Date.Weekday()) - (c.Date.Day() - 1) + wc*30) % wc
 	last := c.Date.AddDate(0, 1, -c.Date.Day()).Day()
-	s := "<table>\n"
+	s := "<table class='calendar'>\n"
 	s += " <tr><th>" + strings.Join(c.WeekLabels, "</th><th>") + "</th></tr>\n"
+	s += " <tr>" + strings.Repeat("<td></td>", wd)
 
 	for d := 1; d <= last; d++ {
 		var attrs string
