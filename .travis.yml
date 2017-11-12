@@ -3,3 +3,10 @@ language: go
 go:
   - 1.8
   - 1.9
+
+script:
+  - go test -v -cover -coverprofile=cover.out
+
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
